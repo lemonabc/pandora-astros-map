@@ -18,7 +18,8 @@ module.exports = function(app) {
         console.warn('pandora-map', '请设置路由');
         return;
     }
-    var des = cfg.des?cfg.des:{};
+
+    var des = cfg.des?cfg.des:null;
     // 在 router 上装备控制器与中间件
     router.get('/astros-map', /*A, B, C,*/ function(req, res) {
         var site_pages = [];
