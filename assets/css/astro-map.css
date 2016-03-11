@@ -334,6 +334,7 @@ body {
   margin-bottom:20px;
 }
 .items-title{
+  position: relative;
   background-color:#45c1d4;
 }
 .items-title a{
@@ -453,12 +454,19 @@ body {
   border-right: 8px solid transparent;
   border-bottom: 8px solid #fff;
 }
-.items-code{
+.items-title .items-code{
   position:absolute;
-  right:10px;
-  top:15px;
+  right:0;
+  top:0;
+  height: 100%;
+  width: 3em;
+  text-align: right;
+  padding-right: .5em;
 }
-.items-code i{
+.items-title .items-code:hover{
+    text-decoration: none;
+}
+.items-title .items-code i{
   font-size:16px;
   color: #fff;
 }
