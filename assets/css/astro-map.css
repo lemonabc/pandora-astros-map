@@ -383,6 +383,7 @@ body {
   width:270px;
   border:1px solid #45c1d4;
   background-color:#fff;
+  z-index: 999;
 }
 .opc li .updata{
   position:absolute;
@@ -391,6 +392,7 @@ body {
   width:270px;
   border:1px solid #45c1d4;
   background-color:#fff;
+  z-index: 999;
 }
 .opc li .members p,.opc li .updata p{
   margin:0 10px;
@@ -461,6 +463,7 @@ body {
   position:absolute;
   top:-80px;
   right:-100px;
+  z-index: 999;
 }
 .dialog {
   position: fixed;

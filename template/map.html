@@ -34,7 +34,7 @@
             <li class="map-items">
                 <h3 class="items-title"><a href="{{item.url}}">{{item.title[0]}}</a></h3>
                 <ul class="opc">
-                    <li data-role="person-list">
+                    <li class="person-list">
                         <a href="javascript:;">
                             <span class="members-icon"><i class="i-member"></i></span>
                             人员列表
@@ -60,11 +60,11 @@
                             </p>
                         </div>
                     </li>
-                    <li><a href="javascript:;" data-url="{{item.url}}" data-role="view-code">
+                    <li><a href="javascript:;" data-url="{{item.url}}" class="view-code">
                         <span class="members-icon"><i class="i-code"></i></span>
                         查看源代码
                     </a></li>
-                    <li data-role="time" id="moui_1457488540199">
+                    <li class="time">
                         <a href="javascript:;">
                             <span class="members-icon"><i class="i-time"></i></span>
                             更新时间
@@ -81,289 +81,21 @@
                         </div>
                     </li>
                 </ul>
-                <a class="items-code" href="javascript:;" data-role="qrcode" data-url="{{item.url}}" data-color="orange"><i class="i-code2"></i>
+                <a class="items-code qrcode" href="javascript:;" data-url="{{item.url}}"><i class="i-code2"></i>
                     <em class="code" style="display:none"></em>
                 </a>
-            </li>
-            <li class="map-items">
-                <h3 class="items-title"><a href="{{item.url}}">{{item.title[0]}}</a></h3>
-                <ul class="opc">
-                    <li data-role="person-list">
-                        <a href="javascript:;">
-                            <span class="members-icon"><i class="i-member"></i></span>
-                            人员列表
-                        </a>
-                        <div class="members" style="display:none">
-                            <p>       
-                                <span class="ui">UI</span>                     
-                                {{each item.ui as name}}
-                                    <em>{{name}}</em>
-                                {{/each}}                           
-                            </p>
-                            <p>      
-                                <span class="ux">UX</span>                     
-                                {{each item.ux as name}}
-                                    <em>{{name}}</em>
-                                {{/each}}                         
-                            </p>
-                            <p>   
-                                <span class="wd">WD</span>                        
-                                {{each item.wd as name}}
-                                    <em>{{name}}</em>
-                                {{/each}}                           
-                            </p>
-                        </div>
-                    </li>
-                    <li><a href="javascript:;" data-url="{{item.url}}" data-role="view-code">
-                        <span class="members-icon"><i class="i-code"></i></span>
-                        查看源代码
-                    </a></li>
-                    <li data-role="time" id="moui_1457488540199">
-                        <a href="javascript:;">
-                            <span class="members-icon"><i class="i-time"></i></span>
-                            更新时间
-                        </a>
-                        <div class="updata" style="display:none">
-                            <p>
-                                创建时间
-                                <span class="first">{{item.ctime[0]}}</span>
-                            </p>
-                            <!-- <p>
-                                最后更新
-                                <span class="last">2015-09-24 21:30:25</span>
-                            </p> -->
-                        </div>
-                    </li>
-                </ul>
-                <a class="items-code" href="javascript:;" data-role="qrcode" data-url="{{item.url}}" data-color="orange"><i class="i-code2"></i>
-                    <em class="code" style="display:none"></em>
-                </a>
-            </li>
-            <li class="map-items">
-                <h3 class="items-title"><a href="{{item.url}}">{{item.title[0]}}</a></h3>
-                <ul class="opc">
-                    <li data-role="person-list">
-                        <a href="javascript:;">
-                            <span class="members-icon"><i class="i-member"></i></span>
-                            人员列表
-                        </a>
-                        <div class="members" style="display:none">
-                            <p>       
-                                <span class="ui">UI</span>                     
-                                {{each item.ui as name}}
-                                    <em>{{name}}</em>
-                                {{/each}}                           
-                            </p>
-                            <p>      
-                                <span class="ux">UX</span>                     
-                                {{each item.ux as name}}
-                                    <em>{{name}}</em>
-                                {{/each}}                         
-                            </p>
-                            <p>   
-                                <span class="wd">WD</span>                        
-                                {{each item.wd as name}}
-                                    <em>{{name}}</em>
-                                {{/each}}                           
-                            </p>
-                        </div>
-                    </li>
-                    <li><a href="javascript:;" data-url="{{item.url}}" data-role="view-code">
-                        <span class="members-icon"><i class="i-code"></i></span>
-                        查看源代码
-                    </a></li>
-                    <li data-role="time" id="moui_1457488540199">
-                        <a href="javascript:;">
-                            <span class="members-icon"><i class="i-time"></i></span>
-                            更新时间
-                        </a>
-                        <div class="updata" style="display:none">
-                            <p>
-                                创建时间
-                                <span class="first">{{item.ctime[0]}}</span>
-                            </p>
-                            <!-- <p>
-                                最后更新
-                                <span class="last">2015-09-24 21:30:25</span>
-                            </p> -->
-                        </div>
-                    </li>
-                </ul>
-                <a class="items-code" href="javascript:;" data-role="qrcode" data-url="{{item.url}}" data-color="orange"><i class="i-code2"></i>
-                    <em class="code" style="display:none"></em>
-                </a>
-            </li>
-            <li class="map-items">
-                <h3 class="items-title"><a href="{{item.url}}">{{item.title[0]}}</a></h3>
-                <ul class="opc">
-                    <li data-role="person-list">
-                        <a href="javascript:;">
-                            <span class="members-icon"><i class="i-member"></i></span>
-                            人员列表
-                        </a>
-                        <div class="members" style="display:none">
-                            <p>       
-                                <span class="ui">UI</span>                     
-                                {{each item.ui as name}}
-                                    <em>{{name}}</em>
-                                {{/each}}                           
-                            </p>
-                            <p>      
-                                <span class="ux">UX</span>                     
-                                {{each item.ux as name}}
-                                    <em>{{name}}</em>
-                                {{/each}}                         
-                            </p>
-                            <p>   
-                                <span class="wd">WD</span>                        
-                                {{each item.wd as name}}
-                                    <em>{{name}}</em>
-                                {{/each}}                           
-                            </p>
-                        </div>
-                    </li>
-                    <li><a href="javascript:;" data-url="{{item.url}}" data-role="view-code">
-                        <span class="members-icon"><i class="i-code"></i></span>
-                        查看源代码
-                    </a></li>
-                    <li data-role="time" id="moui_1457488540199">
-                        <a href="javascript:;">
-                            <span class="members-icon"><i class="i-time"></i></span>
-                            更新时间
-                        </a>
-                        <div class="updata" style="display:none">
-                            <p>
-                                创建时间
-                                <span class="first">{{item.ctime[0]}}</span>
-                            </p>
-                            <!-- <p>
-                                最后更新
-                                <span class="last">2015-09-24 21:30:25</span>
-                            </p> -->
-                        </div>
-                    </li>
-                </ul>
-                <a class="items-code" href="javascript:;" data-role="qrcode" data-url="{{item.url}}" data-color="orange"><i class="i-code2"></i>
-                    <em class="code" style="display:none"></em>
-                </a>
-            </li>
-            <li class="map-items">
-                <h3 class="items-title"><a href="{{item.url}}">{{item.title[0]}}</a></h3>
-                <ul class="opc">
-                    <li data-role="person-list">
-                        <a href="javascript:;">
-                            <span class="members-icon"><i class="i-member"></i></span>
-                            人员列表
-                        </a>
-                        <div class="members" style="display:none">
-                            <p>       
-                                <span class="ui">UI</span>                     
-                                {{each item.ui as name}}
-                                    <em>{{name}}</em>
-                                {{/each}}                           
-                            </p>
-                            <p>      
-                                <span class="ux">UX</span>                     
-                                {{each item.ux as name}}
-                                    <em>{{name}}</em>
-                                {{/each}}                         
-                            </p>
-                            <p>   
-                                <span class="wd">WD</span>                        
-                                {{each item.wd as name}}
-                                    <em>{{name}}</em>
-                                {{/each}}                           
-                            </p>
-                        </div>
-                    </li>
-                    <li><a href="javascript:;" data-url="{{item.url}}" data-role="view-code">
-                        <span class="members-icon"><i class="i-code"></i></span>
-                        查看源代码
-                    </a></li>
-                    <li data-role="time" id="moui_1457488540199">
-                        <a href="javascript:;">
-                            <span class="members-icon"><i class="i-time"></i></span>
-                            更新时间
-                        </a>
-                        <div class="updata" style="display:none">
-                            <p>
-                                创建时间
-                                <span class="first">{{item.ctime[0]}}</span>
-                            </p>
-                            <!-- <p>
-                                最后更新
-                                <span class="last">2015-09-24 21:30:25</span>
-                            </p> -->
-                        </div>
-                    </li>
-                </ul>
-                <a class="items-code" href="javascript:;" data-role="qrcode" data-url="{{item.url}}" data-color="orange"><i class="i-code2"></i>
-                    <em class="code" style="display:none"></em>
-                </a>
-            </li>
-            <li class="map-items">
-                <h3 class="items-title"><a href="{{item.url}}">{{item.title[0]}}</a></h3>
-                <ul class="opc">
-                    <li data-role="person-list">
-                        <a href="javascript:;">
-                            <span class="members-icon"><i class="i-member"></i></span>
-                            人员列表
-                        </a>
-                        <div class="members" style="display:none">
-                            <p>       
-                                <span class="ui">UI</span>                     
-                                {{each item.ui as name}}
-                                    <em>{{name}}</em>
-                                {{/each}}                           
-                            </p>
-                            <p>      
-                                <span class="ux">UX</span>                     
-                                {{each item.ux as name}}
-                                    <em>{{name}}</em>
-                                {{/each}}                         
-                            </p>
-                            <p>   
-                                <span class="wd">WD</span>                        
-                                {{each item.wd as name}}
-                                    <em>{{name}}</em>
-                                {{/each}}                           
-                            </p>
-                        </div>
-                    </li>
-                    <li><a href="javascript:;" data-url="{{item.url}}" data-role="view-code">
-                        <span class="members-icon"><i class="i-code"></i></span>
-                        查看源代码
-                    </a></li>
-                    <li data-role="time" id="moui_1457488540199">
-                        <a href="javascript:;">
-                            <span class="members-icon"><i class="i-time"></i></span>
-                            更新时间
-                        </a>
-                        <div class="updata" style="display:none">
-                            <p>
-                                创建时间
-                                <span class="first">{{item.ctime[0]}}</span>
-                            </p>
-                            <!-- <p>
-                                最后更新
-                                <span class="last">2015-09-24 21:30:25</span>
-                            </p> -->
-                        </div>
-                    </li>
-                </ul>
-                <a class="items-code" href="javascript:;" data-role="qrcode" data-url="{{item.url}}" data-color="orange"><i class="i-code2"></i>
-                    <em class="code" style="display:none"></em>
-                </a>
-            </li>
+            </li>       
         </ul>
         {{/each}}
         <div class="dialog" style="display:none">
-            <a href="javascript:;" class="closed"><i class="fa fa-close"></i></a>
+            <a href="javascript:;" class="closed">x</a>
             <h3>源码</h3>
             <textarea class="d-content">            
             </textarea>
         </div>
-        <script src="/__assets/js/mo.1.0.0.js"></script>
+
+        <script src="/__assets/js/jquery.1.11.3.min.js"></script>
+        <script src="/__assets/js/jquery.qrcode.min.js"></script>
         <script src="/__assets/js/astro-map.js"></script>  
     </body>
 </html>
