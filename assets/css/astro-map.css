@@ -302,6 +302,9 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.i-close:before {
+    content: "\e904";
+}
 .i-code:before {
     content: "\e900";
 }
@@ -483,9 +486,9 @@ body {
 }
 .dialog .closed {
   position: absolute;
-  top: -5px;
+  top: 10px;
   right: 10px;
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 50%;
   -moz-border-radius: 50%;
   /* 兼容老版本firefox */

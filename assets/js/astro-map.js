@@ -36,7 +36,7 @@ $(function() {
             var ele = $(this);
             var url = ele.attr('data-url'),
                 color = ele.attr('data-color'),
-                foreground = '#000000';
+                foreground = '#777777';
             var hostObj = getUrlHost();
                 url= 'http://'+hostObj.host+url;
             //console.log(url);
