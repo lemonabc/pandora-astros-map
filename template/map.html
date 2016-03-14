@@ -12,10 +12,10 @@
     </head>
     <body>
         <div class="astro-wrap">
-        <h1 class="title"><img src="/__assets/img/astro.png" alt="">项目前端产出物</h1>
+        <h1 class="title"><img src="/__assets/img/astro.png" alt="">{{des&&des.name?des.name:'Astros项目前端产出物'}}</h1>
         {{if des}}
         <div class="tips">
-            <p>{{des.name}}简单描述：</p>
+            <!-- <p class="title"></p> -->
             <!-- <p>PRD: http://10.8.10.10/doc/moto/</p>
             <p>交互: http://10.8.10.10/doc/moto/23we</p> -->
             {{if des.product}}
