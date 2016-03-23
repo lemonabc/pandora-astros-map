@@ -35,7 +35,6 @@ $(function() {
         domQrCodes.each(function(){
             var ele = $(this);
             var url = ele.attr('data-url'),
-                color = ele.attr('data-color'),
                 foreground = '#777777';
             var hostObj = getUrlHost();
                 url= 'http://'+hostObj.host+url;
