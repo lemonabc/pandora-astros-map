@@ -1,10 +1,10 @@
 {
   "name": "pandora-astros-map",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "pandora插件，可列出所有的页面，并展示相关信息",
   "main": "index.js",
   "dependencies": {
-    "file-plus": ">=0.0.4"
+    "file-plus": "~1.0.0"
   },  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
