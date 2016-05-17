@@ -19,9 +19,10 @@ module.exports = function(app) {
         return;
     }
 
-    var des = cfg.des?cfg.des:null;
+    var mapCfg = cfg.siteMap || {};
+    var des = mapCfg.des || null;
     // 在 router 上装备控制器与中间件
-    router.get('/astros-map', /*A, B, C,*/ function(req, res) {
+    router.get(mapCfg.route || '/astros-map', function(req, res) {
         var site_pages = [];
         var files = filePlus.getAllFilesSync(cfg.routes);
         // console.log(files);return
